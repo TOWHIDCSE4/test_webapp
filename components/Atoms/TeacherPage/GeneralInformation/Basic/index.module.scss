@@ -1,0 +1,220 @@
+.wrapFirstPage {
+    background-color: #fff;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.title div:first-child {
+    position: relative;
+    padding-left: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0356d2;
+    
+}
+.title div:last-child {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: #0356d2;
+    
+    padding-right: 24px;
+}
+.title div:last-child:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+.title div:first-child::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    width: 5px;
+    height: 15px;
+    background-color: #066fd6;
+    border-bottom: 1px solid #dbdbdb;
+}
+.avatar {
+    text-align: center;
+    margin-top: 15px;
+}
+.infoGroup {
+    padding-left: 25px;
+    padding-bottom: 40px;
+    padding-top: 45px;
+}
+.infoGroup > div {
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.07;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+    
+    display: flex;
+}
+.infoGroup div div {
+    padding-right: 45px;
+    width: 25%;
+}
+.formInfoUser {
+    margin-top: 20px;
+}
+.formInfoUser_Item {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.07;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+    
+}
+.labelFormInfoUser {
+    width: 30%;
+}
+.inputFrom {
+    width: 70%;
+}
+.ipAddress {
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 3.07;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+    
+}
+.ipAddress > div:nth-child(1) {
+    width: 30%;
+}
+.ipAddress > div:nth-child(2) {
+    width: 70%;
+}
+
+.avatarPopup:hover .updateAvatar{
+    opacity: 1;
+}
+.updateAvatar{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 25%;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0,0.3);
+    opacity: 0;
+    transition: all .4s ease;
+    
+}
+.title_popup {
+    position: relative;
+    padding-left: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0356d2;
+    
+    border-bottom: 1px solid #FAFAFC;
+}
+.title_popup::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    width: 5px;
+    height: 15px;
+    background-color: #066fd6;
+    border-bottom: 1px solid #dbdbdb;
+}
+.currentLevel {
+    
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    margin-bottom: 31px;
+    line-height: 2.13;
+    letter-spacing: normal;
+    text-align: left;
+}
+.textDefault {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.13;
+    letter-spacing: normal;
+    text-align: left;
+    
+    padding-right: 0;
+}
+
+.updateFormButton {
+    /* background-color: #252b2f; */
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.13;
+    letter-spacing: normal;
+    text-align: center;
+    
+    color: #fafafc;
+    height: auto;
+    background-color: #999;
+    padding: 4px 20px;
+}
+.updateFormButton:hover,
+.updateFormButton:focus {
+    color: #fafafc;
+    background-color: #999;
+    border-color: #999;
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .infoGroup > div > div {
+        padding-right: 45px;
+        width: 50%;
+    }
+    .labelFormInfoUser {
+        width: 30%;
+    }
+    .ipAddress > div:first-child {
+        width: 30%;
+    }
+}

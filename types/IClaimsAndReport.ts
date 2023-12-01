@@ -1,0 +1,26 @@
+export enum EnumRecommendSection {
+    TEACHER_SYSTEM_REPORT = 1,
+    TEACHER_STUDENT_REPORT = 2,
+    TEACHER_WAGE_RULE_REPORT = 3,
+    TEACHER_MATERIAL_REPORT = 4,
+    TEACHER_OTHER_REPORT = 5,
+
+    STUDENT_SYSTEM_REPORT = 6,
+    STUDENT_TEACHER_REPORT = 7,
+    STUDENT_SUPPORT_REPORT = 8,
+    STUDENT_LEARNING_DOCUMENT_REPORT = 9,
+    STUDENT_OTHER_REPORT = 10
+}
+
+export enum EnumRecommendStatus {
+    PENDING = 1,
+    PROCESSING = 2,
+    COMPLETED = 3,
+    CANCELED = 4,
+    CLOSED = 5
+}
+
+export enum EnumReportType {
+    RECOMMEND = 1,
+    REPORT = 2
+}

@@ -1,0 +1,7 @@
+.panel{
+}
+.content{
+    // max-height: 0px;
+    transition: max-height ease 0.5s;
+    overflow:auto;
+}

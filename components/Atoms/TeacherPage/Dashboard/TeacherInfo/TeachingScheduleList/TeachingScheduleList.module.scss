@@ -1,0 +1,46 @@
+.subSchedule {
+    display: flex;
+    justify-content: center;
+    height: 45px;
+    align-items: center;
+    background-image: linear-gradient(to right, #fa9b1a, #f67900, #f63238);
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.subSchedule > .Fullname {
+    font-size: 19px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.32;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    font-family: iCielPanton-Light;
+    margin-left: 27px;
+}
+.subSchedule .date{
+    margin-left: 20px;
+}
+.subSchedule > span:last-child {
+    font-size: 19px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.32;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    font-family: iCielPanton-Light;
+    margin-right: 33px;
+}
+
+.filterMemo {
+    >div {
+        border-radius: 0.5rem !important;
+    }
+    border-radius: 0.5rem !important;
+}

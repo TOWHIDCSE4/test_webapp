@@ -1,0 +1,37 @@
+.payment {
+    display: flex;
+    align-items: center;
+    overflow: auto;
+    flex-wrap: wrap;
+}
+.item-payment {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    width: 120px;
+    height: 120px;
+    transition: 0.2s all;
+    cursor: pointer;
+
+    &:hover {
+        background-color: #e6f7ff !important;
+        border-color: #91d5ff !important;
+    }
+
+    p {
+        margin: 0;
+    }
+    svg {
+        width: 40px !important;
+        height: 40px !important;
+        margin: 10px;
+    }
+}
+
+.active {
+    background-color: #e6f7ff !important;
+    border-color: #91d5ff !important;
+}

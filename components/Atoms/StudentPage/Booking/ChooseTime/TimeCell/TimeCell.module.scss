@@ -1,0 +1,54 @@
+.calendar-cell-booked, .calendar-cell-frozen {
+    background: #ccc;
+    background-image: repeating-linear-gradient(
+60deg
+,transparent,transparent 2px,#eee 0,#eee 7px);
+}
+.calendar-cell.invalid {
+    cursor: not-allowed;
+}
+.calendar-cell {
+	width: calc(100% + 10px);
+	height: calc(100% + 4px);
+	margin:-2px -5px;
+    cursor: pointer;
+}
+.calendar-cell-actived {
+    background: #7ec937;
+    cursor: pointer;
+}
+.calendar-cell-actived:hover {
+    background: #65a12c;
+}
+.calendar-cell-selected {
+    background: #00bfbd;
+}
+.calendar-cell-selected:hover {
+    background: teal;
+}
+.calendar-cell-expired {
+    cursor: unset;
+    background-color: #ffb3b3;
+    background-image: repeating-linear-gradient(
+45deg
+,transparent,transparent 1px,#fff 0,#fff 3px);
+}
+.calendar-cell-booked, .calendar-cell-frozen {
+    background: #ccc;
+    background-image: repeating-linear-gradient(
+60deg
+,transparent,transparent 2px,#eee 0,#eee 7px);
+cursor: unset;
+}
+.calendar-cell-booked-by-me {
+    background-color: #cff1c2;
+    background-image: repeating-linear-gradient(
+45deg
+,transparent,transparent 1px,#fff 0,#fff 3px);
+cursor: unset;
+}
+
+.calendar-cell-fixed-actived {
+    background: #7ec937;
+    cursor: not-allowed;
+}

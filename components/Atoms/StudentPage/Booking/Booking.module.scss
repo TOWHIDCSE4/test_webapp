@@ -1,0 +1,31 @@
+.PreviousBtn {
+    float: right;
+    background: none;
+    border: none;
+    margin: 0 30px 0 0;
+    font-weight: bold;
+    color: #076fd6;
+}
+
+.Cs-Step span span {
+    vertical-align: 1.5px;
+}
+
+.disable-btn-next:disabled {
+    cursor: not-allowed;
+    color: #0e2d63 !important;
+}
+
+.colorBlue4 {
+    color: #076fd6 !important;
+}
+.btn-back {
+    display: flex;
+    align-items: center;
+    span {
+        padding: 0 20px;
+    }
+    img {
+        transform: rotate(180deg);
+    }
+}

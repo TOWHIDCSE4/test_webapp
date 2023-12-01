@@ -1,0 +1,27 @@
+.icon-learnt {
+    color: green;
+    font-size: 15px;
+    vertical-align: 0;
+}
+
+.scroll-courses {
+    max-height: 500px;
+    overflow: auto;
+}
+
+.scroll-courses::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll-courses::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.scroll-courses::-webkit-scrollbar-thumb {
+    background-color: #c2c2c299;
+    border-radius: 3px;
+}
+
+.scroll-courses::-webkit-scrollbar-thumb:hover {
+    background-color: #c2c2c2;
+}

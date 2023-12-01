@@ -1,0 +1,16 @@
+.containerWrap {
+    width: 100%;
+    max-width: 1445px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    // background-color: #f3f3f3;
+}
+@media (max-width: 767px){
+    .containerWrap{
+        background-color: #fff;
+    }
+}
+@media screen and (min-width: 785px) and (max-width: 1445px) {
+  
+}

@@ -1,0 +1,97 @@
+.tabNav button {
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.56;
+    letter-spacing: normal;
+    text-align: right;
+    outline: none;
+    border: none;
+    margin-right: 15px;
+    background-color: transparent;
+    
+}
+.tabNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all ease 0.3s;
+}
+.tabNav .active {
+    color: #066fd6;
+    border-bottom: 5px solid #066fd6;
+}
+.tabContent {
+    margin-top: 30px;
+}
+.searchTemplate{
+    display: flex;
+}
+.search{
+    position: relative;
+}
+.search input{
+    width: 350px;
+    height: 35px;
+    border-radius: 20px;
+    padding-left: 30px;
+}
+.search button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: initial;
+    font-size: 17px;
+    padding: 0 0 0 10px;
+    border: none;
+    box-shadow: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.wrapFilter{
+    margin-top: 20px;
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .tabNav {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .wrapFilter{
+        margin-left: 15px;
+        margin-right: 15px;
+        transition: all ease 0.3s;
+    }
+    .groupButton{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .tabNav .searchTemplate{
+        display: none;
+    }
+    .tabNav button {
+        font-size: 1rem;
+        margin-right: 0;
+    }
+    .tabNav > button:first-child {
+        margin-right: 10px;
+    }
+    .tabNav .active {
+        border-bottom: 3px solid #066fd6;
+    }
+    .tabContent {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .tabNav button {
+        font-size: 16px;
+        margin-right: 0;
+    }
+}

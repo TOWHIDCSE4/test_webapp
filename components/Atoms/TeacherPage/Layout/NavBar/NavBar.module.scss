@@ -1,0 +1,103 @@
+.wrapItem {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.tittleMenu {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #000;
+    
+    margin: 0 0 10px;
+    display: block;
+    cursor: pointer;
+}
+.numberNoti {
+    border: solid 1px #f30;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #f30;
+    
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    line-height: 14px;
+    text-align: center;
+    font-size: 10px;
+    top: 4px;
+    right: 0;
+    position: absolute;
+}
+.menuItem {
+    max-height: 30px;
+    overflow: hidden;
+}
+.img {
+    // display: none;
+    width: 23px;
+    height: 23px;
+}
+.menuSpan {
+    font-size: 16px;
+    line-height: 20px;
+    /* padding-left: 14px; */
+    color: #000;
+    
+    // font-weight: 500;
+    line-height: 1.5;
+}
+.active {
+    color: rgb(7, 111, 214);
+}
+.logOutMobile {
+    font-size: 16px;
+    line-height: 20px;
+    /* padding-left: 14px; */
+    color: rgb(7, 111, 214);
+    
+    font-weight: bold;
+    line-height: 1.5;
+    display: none;
+}
+.header_menuMobile {
+    height: 50px;
+    display: none;
+    justify-content: space-between;
+    border-bottom: 1px solid #FAFAFC;
+    /* position: fixed;
+    width: 100%;
+    top: 0px; */
+   
+}
+.notiIcon {
+    position: relative;
+}
+.number {
+    border: solid 1px #f30;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #f30;
+    
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    line-height: 14px;
+    text-align: center;
+    font-size: 10px;
+    top: -5px;
+    right: -5px;
+    position: absolute;
+}
+.btnClose{
+    cursor: pointer;
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .logOutMobile {
+        display: block;
+    }
+    .header_menuMobile{
+        display: flex;
+    }
+    .desc{
+        padding: 0;
+    }
+}

@@ -1,0 +1,277 @@
+.infoUserDashboard {
+    background-color: #fff;
+    padding-left: 40px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+@media (min-width : 360px) and (max-width: 500px){
+    .infoUserDashboard{
+        padding-left: 20px;
+    }
+}
+
+.progressAndAvata {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.avartaUser {
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%);
+    /* transform: translateX(-40%);
+    transform: translateY(-50%); */
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avartaUser img {
+    min-width: 160px;
+    max-height: 160px;
+    object-fit: cover;
+}
+
+.starRatingItem {
+    width: 20px;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+.ratingStartGroup {
+    text-align: center;
+    p {
+        font-size: 12px;
+        font-style: italic;
+        margin-bottom: 0;
+        margin-top: 0.25rem;
+    }
+}
+
+.countReview {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.countReview span {
+    
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.13;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0356d2;
+}
+
+.socialNetwork {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    .gmail{
+        margin-top: 8px;
+    }
+}
+.infoUserMid {
+    display: block;
+}
+.infoUserMid:last-child {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+    
+    margin-top: 38px;
+    margin-bottom: 45px;
+}
+.infoUserMid:last-child a {
+    font-size: 14px;
+    line-height: 20px;
+    color: #066fd6;
+    
+}
+.name {
+    color: #252b2f;
+    font-size: 30px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    font-family: iCielPanton-Light;
+}
+
+
+
+.level {
+    
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    font-size: 16px;
+    color: #f6353b;
+    line-height: 2.13;
+    letter-spacing: normal;
+    text-align: left;
+    /* margin-top: 24px;
+    margin-bottom: 18px; */
+}
+
+.infoUserSchedule {
+    background-image: linear-gradient(to right, #fa9b1a, #f67900, #f63238);
+    //border-bottom-right-radius: 10px;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    
+    p:nth-child(2){
+        text-align: center;
+    }
+}
+.infoUserSchedule p:first-child {
+    font-size: 21px;
+    font-family: iCielPanton-Light;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.19;
+    letter-spacing: normal;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 43px;
+}
+.infoUserSchedule p:nth-child(3) {
+    
+    font-size: 28px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.46;
+    letter-spacing: normal;
+    text-align: center;
+    margin-top: 22px;
+    margin-bottom: 38px;
+}
+.infoUserSchedule p:nth-child(4) {
+    
+    font-size: 58px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.79;
+    letter-spacing: normal;
+    text-align: center;
+    margin-bottom: 29px;
+}
+.infoUserSchedule p:nth-child(5) {
+    
+    font-size: 20px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: normal;
+    text-align: center;
+    margin-bottom: 33px;
+}
+.infoUserSchedule div {
+    display: flex;
+    justify-content: center;
+    /* display: flex;
+    justify-content: center;     */
+}
+.btnShowSchedule {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.13;
+    letter-spacing: normal;
+    text-align: left;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    background-color: transparent;
+    color: #fafafc;
+    
+}
+.btnShowSchedule:focus {
+    color: #fafafc;
+    background-color: transparent;
+    outline: #fafafc;
+    border-color: #fafafc;
+    // span {
+    //     position: unset !important;
+    // }
+}
+.subSchedule {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    align-items: center;
+    background-image: linear-gradient(to right, #fa9b1a, #f67900, #f63238);
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.subSchedule > .Fullname {
+    font-size: 19px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.32;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    font-family: iCielPanton-Light;
+    margin-left: 27px;
+}
+.subSchedule .date{
+    margin-left: 20px;
+}
+.subSchedule > span:last-child {
+    font-size: 19px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.32;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    font-family: iCielPanton-Light;
+    margin-right: 33px;
+}
+
+.number {
+    background-color: #e42e00;
+    position: absolute !important;
+    top: -15px;
+    right: -10px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 15px;
+    line-height: 12px;
+    padding: 1px 3px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex !important;
+}

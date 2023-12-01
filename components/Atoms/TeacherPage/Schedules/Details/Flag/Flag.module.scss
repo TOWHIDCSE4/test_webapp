@@ -1,0 +1,25 @@
+.flag {
+    width: 5%;
+    border-right: 1px solid #fafafc;
+    background-color: #f63238;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.flag .icon{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .flag {
+        width: 100%;
+        border-radius: unset;
+        padding: 15px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .flag .icon{
+       margin-top: 0;
+    }
+}

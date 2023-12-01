@@ -1,0 +1,23 @@
+.count-badge {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 6px 6px;
+    background: #fc7166;
+    color: #fff;
+    text-align: center;
+    right: -5px;
+    line-height: 15px;
+    top: -8px;
+    position: absolute;
+}
+
+.mobi {
+    overflow: hidden;
+}
+@media screen and (max-height: 650px) {
+    .mobi {
+        height: 500px;
+        overflow-y: scroll;
+    }
+}

@@ -1,0 +1,225 @@
+.header {
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+}
+.wrapHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftHeader {
+    display: flex;
+    align-items: center;
+}
+.rightHeader {
+    display: flex;
+    align-items: center;
+}
+.myAccount {
+    position: relative;
+}
+.inforAccount {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    cursor: pointer;
+}
+.desc {
+    position: relative;
+    padding: 0 35px 0 10px;
+}
+.name {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Roboto-Regular;
+    margin: 0;
+}
+.level {
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0;
+    color: #000;
+    font-family: Roboto-Regular;
+}
+.iconAngleDown {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 20px;
+}
+
+.menuIcon {
+    // color: #1890ff;
+    font-weight: 700;
+    font-size: large;
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .menuIcon {
+        display: block;
+    }
+}
+.menuAccount {
+    box-shadow: 0px 0px 5px 0px #ccc;
+    padding: 25px 0;
+    border-radius: 5px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 240px;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+    /* display: none; */
+    background-color: #fff;
+    z-index: 1;
+}
+.titleMenu {
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: Roboto-Medium;
+}
+.top,
+.mid {
+    margin-bottom: 20px;
+    padding: 0 20px 20px 20px;
+    border-bottom: solid 1px #ccc;
+}
+a.hrefAccount {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Roboto-Medium;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+a.hrefAccount:hover,
+a.hrefAccount:focus {
+    color: #23527c;
+}
+.logOut button {
+    background: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0 20px;
+    color: #000;
+    font-family: Roboto-Medium;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.logOut button:hover {
+    color: red;
+}
+.notification {
+    position: relative;
+    cursor: pointer;
+}
+.number {
+    background-color: #e42e00;
+    position: absolute;
+    top: 0px;
+    left: 10px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 1px 3px;
+}
+.menuNoti {
+    position: absolute;
+    box-shadow: 0px 0px 5px 0px #ccc;
+    top: 140%;
+    right: -21px;
+    width: 240px;
+    background-color: #fff;
+    border-radius: 8px;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+    overflow: auto;
+    z-index: 10;
+    /* display: none; */
+}
+.itemMenuNoti {
+    padding: 15px;
+    border-bottom: solid 1px #f7f7f7;
+}
+.itemMenuNoti p {
+    font-size: 14px;
+    line-height: 20px;
+    font-family: Roboto-Medium;
+    margin-bottom: 5px;
+}
+.itemMenuNoti span:first-child {
+    padding-right: 10px;
+}
+.itemMenuNoti span {
+    font-size: 12px;
+    line-height: 18px;
+    color: #a7a7a7;
+    font-family: Roboto-Medium;
+}
+.itemMenuNoti:last-child a {
+    color: #f6353b;
+    float: unset;
+    padding: 0;
+    text-decoration: none;
+}
+.itemMenuNoti:last-child {
+    border-bottom: none;
+}
+.pulation a {
+    float: right;
+    font-size: 12px;
+    line-height: 18px;
+    color: #a7a7a7;
+    font-family: Roboto-Medium;
+    padding-top: 4px;
+    text-decoration: none;
+}
+
+/* @media screen and (min-width: 785px) and (max-width: 1445px) {
+    .wrapHeader{
+        position: relative;
+    }
+    .menuIcon{
+        left: 5%;
+        position: absolute;
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #a7a7a7;
+        border-radius: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+} */
+.avatarMobile {
+    display: none;
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .header {
+        height: 50px;
+    }
+    .wrapHeader {
+        justify-content: space-between;
+        align-items: center;
+    }
+    .avatarMobile {
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .rightHeader {
+        display: none;
+    }
+}
+
+.notification-item--new {
+    font-weight: bold;
+    border-left: 3px solid #fc7166;
+}

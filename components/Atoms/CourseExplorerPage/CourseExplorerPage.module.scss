@@ -1,0 +1,14 @@
+.searchCourse {
+    > span {
+        input {
+            border-top-left-radius: 0.5rem !important;
+            border-bottom-left-radius: 0.5rem !important;
+        }
+        > span {
+            button {
+                border-top-right-radius: 0.5rem !important;
+                border-bottom-right-radius: 0.5rem !important;
+            }
+        }
+    }
+}

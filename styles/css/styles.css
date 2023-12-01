@@ -1,0 +1,141 @@
+/* col-* - 0 (xs)
+col-sm-* - 576px
+col-md-* - 768px
+col-lg-* - 992px
+col-xl-* - 1200px
+col-xxl-* - 1400px */
+*{
+    font-family: sans-serif;
+}
+
+body {
+    height: auto;
+}
+.main {
+    height: 100vh;
+    overflow: auto;
+}
+
+.small-schedule-cell:last-child {
+    border-bottom: 1px solid #ddd;
+}
+.small-schedule-section:nth-child(7) .small-schedule-cell {
+    border-right: 1px solid #ddd;
+}
+.small-schedule
+    .small-schedule-section:nth-child(7)
+    .small-schedule-cell:last-child {
+    border-bottom-right-radius: 3px;
+}
+
+/* Define to use common global */
+
+.items-center {
+    align-items: center;
+}
+
+.confirm-class-popup {
+    max-width: 500px;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ant-modal-close:focus {
+    outline: none;
+}
+#jitsiConferenceFrame0 {
+    height: 100vh !important;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.color-white {
+    color: #fff;
+}
+
+.color-blue {
+    color: #0c7ce6;
+}
+
+.borderModal {
+
+}
+
+p {
+    white-space: pre-line;
+}
+
+.table-wrapper .ant-table-header.ant-table-sticky-holder {
+    top: 45px !important;
+}
+
+.holiday-popup .ant-modal-content {
+    background-color: inherit;
+    box-shadow: none;
+}
+
+.border-rds-select-antd >div {
+    border-radius: 0.5rem !important;
+}
+
+.interest-select .ant-select-selector {
+    border-radius: 10px !important;
+    border: solid 1px #0E2D63 !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .sidebar2 {
+        left: 0 !important;
+    }
+
+    .content-mobile{
+        padding-left: 44px !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .nav-item-mobile {
+        display: none !important;
+    }
+}
+.ant-modal-mask{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.ant-modal-content-transparent .ant-modal-content {
+    background-color: transparent !important;
+    box-shadow: unset !important;
+}
+

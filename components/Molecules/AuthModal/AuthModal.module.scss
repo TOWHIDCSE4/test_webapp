@@ -1,0 +1,121 @@
+.PolicyNote-desktop .PolicyNote-note,
+.PolicyNote-mobile .PolicyNote-note,
+.PolicyNote-tablet .PolicyNote-note {
+    display: inline-block;
+    word-break: break-word;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.85);
+}
+.PolicyNote-desktop .PolicyNote-note a,
+.PolicyNote-mobile .PolicyNote-note a,
+.PolicyNote-tablet .PolicyNote-note a {
+    color: #1FC974;
+    text-decoration: underline;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    // border-bottom: 4px solid blue;
+}
+
+.headTitle{
+    margin-bottom: 0px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.customModal{
+    :global {
+        .ant-modal-content {
+            border-radius: 20px;
+        }
+        .ant-modal-header{
+            border-bottom: none;
+            padding-bottom: 15px;
+            border-radius: 20px;
+        }
+    
+        .ant-image-img{
+            margin-bottom: 15px;
+        }
+       
+        .ant-modal-body{
+            padding-top: 0;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        .ant-divider-plain.ant-divider-with-text{
+            font-size: 20px;
+            margin-bottom: 20px;
+            margin-top: 0px;
+        }
+        .ant-btn-primary{
+            font-weight: 700;
+            font-size: 14px;
+            border-radius: 5px;
+        }
+
+        .ant-modal-close{
+            border: 2px solid #fff ;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .ant-modal-close-icon {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .ant-modal-close:focus, .ant-modal-close:hover{
+            border: 2px solid #fff ;
+            background: #f3f3f3;
+        }
+
+        .ant-modal-close-x{
+            font-size: 14px;
+            border: 3px white;
+            width: auto;
+            height: auto;
+            margin: -5px 10px;
+        }
+        .ant-modal-close-x:focus{
+            border: 3px white;
+        }
+
+      
+
+    }
+}
+
+.customInputPassword{
+    :global{
+        .ant-input-affix-wrapper{
+            border: 2px solid #E6E8EC !important;
+        }
+
+        .ant-input {
+            border: unset !important;
+        }
+    }
+    border: 2px solid #E6E8EC !important;
+    border-radius: 0.5rem;
+    padding: 6.5px 15px;
+}
+
+.customInput {
+    :global{
+        .ant-input {
+            border: 2px solid #E6E8EC !important;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .title {
+        margin-top: 40px;
+    }
+}

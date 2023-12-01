@@ -1,0 +1,20 @@
+.titleCard {
+    font-weight: 500;
+    color: #fff;
+}
+
+.btn-rating {
+    background-color: #f50;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    border: none;
+}
+
+.btn-rating:hover,
+.btn-rating:active,
+.btn-rating:focus,
+.btn-rating.visited {
+    background-color: rgb(221, 92, 27);
+    color: #fff;
+}

@@ -1,0 +1,188 @@
+@font-face {
+  font-family: Roboto-Medium;
+  src: url("../../fonts/Teacher/fonts/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: Roboto-Thin;
+  src: url("../../fonts/Teacher/fonts/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: Roboto-Regular;
+  src: url("../../fonts/Teacher/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: MyrobotoProBold;
+  src: url("../../fonts/Teacher/fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: RobotoLight;
+  src: url("../../fonts/Teacher/fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: iCielPanton-Light;
+  src: url("../../fonts/Teacher/fonts/iCielPanton-Light.otf");
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #000;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@media (max-width: 450px){
+  table{
+    margin-left: -20px;
+  }
+}
+/* end reset css */
+:root {
+  --Vang-btn: #d5dc18;
+  --Xam-chu: rgb(91, 91, 91);
+  --Xanh-title: rgb(7, 111, 214);
+  --Cam--btn: rgb(251, 142, 12);
+  --Trang: #fff;
+  --Text-menu: rgb(69, 68, 68);
+  --Xam-9: #999;
+  --Xam-C: #ccc;
+  --Trang-f2: #f2f2f2;
+  --Den: #000;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  
+  color: var(--Text-menu);
+  /* line-height: 25px; */
+  background-color: #F3F3F3 !important;
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+  .container{
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

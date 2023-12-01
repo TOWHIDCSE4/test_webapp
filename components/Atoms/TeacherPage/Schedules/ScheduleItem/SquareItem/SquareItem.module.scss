@@ -1,0 +1,22 @@
+.squareItem {
+    max-width: 40px;
+    min-height: 40px;
+    background-color: #DBDBDB;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
+}
+.squareItem:hover{
+    opacity: 0.8;
+    transition: all 0.3;
+    cursor: pointer;
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .squareItem {
+        max-width: 60px;
+        min-height: 60px;
+        
+    }
+}

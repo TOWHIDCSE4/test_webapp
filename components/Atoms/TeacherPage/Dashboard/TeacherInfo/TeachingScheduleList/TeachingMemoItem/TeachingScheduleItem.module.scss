@@ -1,0 +1,365 @@
+.wrapTeachingScheduleItem {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    position: relative;
+    overflow: hidden;
+}
+.teachingScheduleItem {
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #016dff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    transition: height ease 0.3s;
+    overflow: hidden;
+    /* display: none; */
+}
+
+.headTeachingSchedule {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+.headTeachingSchedule > span:first-child {
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0356d2;
+    padding-top: 16px;
+    padding-left: 25px;
+    padding-bottom: 16px;
+    
+}
+.headTeachingSchedule > span:last-child {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: #0356d2;
+    
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.headTeachingSchedule_content {
+    height: 115px;
+}
+.headTeachingSchedule_content > div {
+    height: 100%;
+}
+.headTeachingSchedule_content > div > div {
+    height: 100%;
+}
+.headTeachingSchedule_content_left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #fafafc;
+    border-right: 1px solid #fafafc;
+}
+.headTeachingSchedule_content_left > span:first-child {
+    font-size: 36px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #fc5353;
+    font-family: iCielPanton-Light;
+    margin-left: 25px;
+}
+.headTeachingSchedule_content_left > span:last-child {
+    font-size: 36px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+    margin-right: 25px;
+    font-family: iCielPanton-Light;
+}
+.headTeachingSchedule_content_mid {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    border-top: 1px solid #fafafc;
+    border-right: 1px solid #fafafc;
+}
+.headTeachingSchedule_content_mid > div {
+    
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+}
+.headTeachingSchedule_content_mid > div:first-child {
+    margin-right: 56px;
+    margin-left: 25px;
+}
+.headTeachingSchedule_content_mid > div:last-child p {
+    color: #0356d2;
+}
+.headTeachingSchedule_content_right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    border-top: 1px solid #fafafc;
+}
+.headTeachingSchedule_content_right div {
+    
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+}
+.headTeachingSchedule_content_right div:first-child {
+    margin-right: 37px;
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.headTeachingSchedule_content_right div:last-child p {
+    color: #0356d2;
+}
+.footTeachingSchedule {
+    height: 50px;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #707070;
+    
+}
+.footTeachingSchedule > div {
+    height: 100%;
+}
+.footTeachingSchedule_left {
+    display: flex;
+    /* justify-content: space-around; */
+    border-top: 1px solid #fafafc;
+    border-right: 1px solid #fafafc;
+    align-items: center;
+    padding-left: 45px;
+    padding-right: 0;
+}
+.footTeachingSchedule_left > span:nth-child(1) {
+    width: 30%;
+}
+.footTeachingSchedule_left > span:nth-child(2) {
+    width: 30%;
+}
+.footTeachingSchedule_left > span:nth-child(3) {
+    width: 40%;
+}
+.footTeachingSchedule_left span {
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    font-family: iCielPanton-Light;
+}
+.footTeachingSchedule_left span:nth-child(2) {
+    color: #1eb675;
+}
+.footTeachingSchedule_mid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #fafafc;
+    border-right: 1px solid #fafafc;
+    padding: 0;
+}
+
+.footTeachingSchedule_mid .changeUnit div {
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+    border-right: none;
+}
+.footTeachingSchedule_mid .changeUnit a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footTeachingSchedule_mid .changeUnit {
+    border-left: 1px solid #fafafc;
+}
+.footTeachingSchedule_mid div {
+    /* padding: 15px; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.footTeachingSchedule_mid div:first-child {
+    /* border-right: 1px solid #dbdbdb; */
+}
+
+.footTeachingSchedule_mid div a {
+    display: flex;
+    align-items: center;
+}
+.footTeachingSchedule_right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid #fafafc;
+}
+.footTeachingSchedule_right div {
+    /* padding: 15px; */
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* border-right: 1px solid #dbdbdb; */
+}
+.footTeachingSchedule_right div:first-child {
+    border-right: 1px solid #fafafc;
+}
+.footTeachingSchedule_right div a {
+    display: flex;
+    align-items: center;
+}
+.footTeachingSchedule_right div:last-child a,
+.footTeachingSchedule_right div:last-child a:hover {
+    color: #0356d2;
+}
+.footTeachingSchedule .btnControl:hover {
+    color: #fa9b1a;
+    transition: all 0.2s;
+}
+.scheduleRectangleItem {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    /* padding-right: 30px; */
+    background-color: #fff;
+    border-radius: 15px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    /* height: 65px; */
+}
+.scheduleRectangleItem > div > div:nth-child(1) {
+    padding: 0;
+}
+.scheduleRectangleItem_left {
+    display: flex;
+    /* justify-content: space-around; */
+    padding-left: 45px;
+}
+.scheduleRectangleItem_left > span:nth-child(1) {
+    width: 30%;
+}
+.scheduleRectangleItem_left > span:nth-child(2) {
+    width: 30%;
+}
+.scheduleRectangleItem_left > span:nth-child(3) {
+    width: 40%;
+}
+
+.scheduleRectangleItem_left span {
+    font-size: 18px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5d5d5d;
+    font-family: iCielPanton-Light;
+}
+.scheduleRectangleItem_mid {
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5d5d5d;
+    
+}
+.scheduleRectangleItem_mid span:first-child {
+    margin-right: 56px;
+    margin-left: 10px;
+}
+.scheduleRectangleItem_mid span:nth-child(2) {
+    color: #0356d2;
+}
+.scheduleRectangleItem_right {
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5d5d5d;
+    position: relative;
+    
+}
+.scheduleRectangleItem_right span:first-child {
+    margin-right: 56px;
+    margin-left: 10px;
+}
+.scheduleRectangleItem_right span:nth-child(2) {
+    color: #0356d2;
+}
+.groupDot {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -20px;
+}
+.dot {
+    width: 3px;
+    height: 3px;
+    background-color: #5d5d5d;
+    border-radius: 50%;
+    margin-left: 3px;
+}
+.btnMemoRight {
+    a {
+        line-height: 0;
+        span {
+            vertical-align: 0;
+        }
+    }
+    margin-right: 1rem;
+}
+.btnMemoRight:hover,
+.btnMemoRight:focus,
+.btnMemoRight:active {
+    color: #fa9b1a;
+    transition: all 0.2s;
+}

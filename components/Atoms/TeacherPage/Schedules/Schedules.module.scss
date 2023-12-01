@@ -1,0 +1,384 @@
+.wrapSchedules {
+    position: relative;
+    transition: right ease 0.5s;
+    // overflow-x: hidden;
+    min-height: 100vh;
+    /* max-height: 100vh; */
+    // overflow: hidden;
+}
+
+.headerScheduleCollapse {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.headerScheduleCollapse_left {
+    position: relative;
+}
+.headerScheduleMid_left {
+    position: relative;
+}
+.btnShowCalendar {
+    cursor: pointer;
+    display: flex;
+}
+.btnShowCalendar:hover {
+    opacity: 0.8;
+}
+.calendar {
+    // position: absolute;
+    // top: 30px;
+    // z-index: 3;
+    // display: none;
+    margin-left: 1rem;
+    margin-top: -5px;
+}
+.collapseSchedules {
+    // position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: left ease 0.5s;
+}
+.hideDoneSlot {
+    position: absolute;
+    left: -105%;
+    top: 0;
+    width: 100%;
+}
+.showDoneSlot {
+    transition: left ease 0.5s;
+}
+.collapseSchedules.hide {
+    left: -105%;
+}
+.collapseSchedules_Item {
+    height: auto;
+    position: relative;
+    transition: height ease 0.5s;
+    margin-top: 5px;
+    overflow: hidden;
+}
+.collapseSchedules_Item_Show {
+    transition: height ease 0.5s;
+    // height: 243px;
+}
+.collapseSchedules_Panel {
+    // position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+}
+.headerScheduleCollapse_mid .dateTime {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+    
+}
+.headerScheduleCollapse_mid span {
+    font-size: 30px;
+    color: #dbdbdb;
+}
+.headerScheduleCollapse_right {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: #0356d2;
+    
+    cursor: pointer;
+}
+.headerScheduleCollapse_right:hover {
+    opacity: 0.8;
+}
+.headerScheduleCollapse_mid {
+    display: flex;
+    align-items: center;
+}
+.collapseSchedules_Nav {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding-top: 20px;
+    padding-bottom: 21px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #dedede;
+}
+.collapseSchedules_Nav.hide {
+    display: none;
+}
+.collapseSchedules_Nav .dateTime {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+    
+}
+.collapseSchedules_Nav .blocked {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: right;
+    color: #f6353b;
+    
+}
+.collapseSchedules_Nav .date {
+    display: none;
+}
+.collapseSchedules_Nav .day {
+    display: none;
+}
+.ScheduleMid,
+.editSlot {
+    position: absolute;
+    top: 0;
+    right: -105%;
+    width: 100%;
+    transition: right ease 0.5s;
+    /* display: none; */
+}
+.ScheduleMid.hide {
+    right: -105%;
+}
+.content {
+    // max-height: 700px;
+    // overflow-y: auto;
+}
+.ScheduleMid.show {
+    right: 0;
+    /* display: block; */
+}
+.headerScheduleMid {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.headerScheduleMid_mid {
+    display: flex;
+    align-items: center;
+}
+.headerScheduleMid_mid .dateTime {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 24px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+    
+}
+.headerScheduleMid_mid span {
+    font-size: 30px;
+    color: #dbdbdb;
+}
+.wrapItemSchedules {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.headerScheduleMid_right {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    color: #0356d2;
+    
+    cursor: pointer;
+}
+.headerScheduleMid_right:hover {
+    opacity: 0.8;
+}
+.your_schedules {
+    position: absolute;
+    top: 0;
+    right: -105%;
+    width: 100%;
+    transition: right ease 0.5s;
+    transition: display ease 0.5s;
+    display: none;
+}
+
+.your_schedules.show {
+    right: 0;
+    display: block;
+}
+.your_schedules .header_title {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.your_schedules .header_title > .title {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0356d2;
+    
+}
+.your_schedules .header_title .dateTime {
+    font-size: 19px;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.32;
+    letter-spacing: normal;
+    text-align: center;
+    color: #252b2f;
+    font-family: iCielPanton-Light;
+}
+.your_schedules .content {
+    padding-top: 20px;
+}
+.content {
+    .fade-out {
+        opacity: 1;
+        animation: fadeOut 0.5s forwards;
+    }
+
+    .fade-in {
+        opacity: 1;
+        animation: fadeIn 0.5s forwards;
+    }
+}
+.your_schedules .contentItem {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .wrapSchedules {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .wrapCollapseSchedules .content {
+        max-height: 90vh;
+        // overflow: auto;
+    }
+    .headerScheduleCollapse {
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .headerScheduleCollapse_mid .dateTime {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+    .headerScheduleCollapse_mid span {
+        font-size: 20px;
+        color: #dbdbdb;
+    }
+    .headerScheduleMid {
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .headerScheduleMid_mid .dateTime {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 20px;
+    }
+    .headerScheduleMid_mid span {
+        font-size: 20px;
+        color: #dbdbdb;
+    }
+    .collapseSchedules_Nav {
+        padding: 10px;
+    }
+    .collapseSchedules_Nav .dateTime {
+        // display: none;
+    }
+    .collapseSchedules_Nav .blocked {
+        // display: none;
+    }
+    .collapseSchedules_Nav .date {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: right;
+        color: #252b2f;
+        
+    }
+    .collapseSchedules_Nav .day {
+        font-size: 20px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.71;
+        letter-spacing: normal;
+        text-align: right;
+        color: #252b2f;
+        
+        display: block;
+    }
+    .collapseSchedules_Item_Show {
+        // height: 617px;/
+    }
+    .your_schedules .header_title {
+        padding: 15px 10px;
+        align-items: center;
+    }
+    .your_schedules .header_title .dateTime {
+        font-size: 16px;
+        line-height: unset;
+    }
+    .header_title > div:last-child {
+        display: none;
+    }
+    .your_schedules .content {
+        max-height: 700px;
+        overflow-y: auto;
+    }
+    .your_schedules .contentItem {
+    }
+    .wrapItemSchedules {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 375px) {
+}
+
+@-webkit-keyframes run {
+    0% {
+        left: -105%;
+    }
+    100% {
+        left: 0;
+    }
+}

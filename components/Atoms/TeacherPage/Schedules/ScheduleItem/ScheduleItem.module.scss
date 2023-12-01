@@ -1,0 +1,197 @@
+.wrapItem {
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    -webkit-border-radius: 15px;
+}
+.wrapItem .left {
+    width: 10%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #016dff;
+    position: relative;
+    min-height: 243px;
+}
+.wrapItem .disabled {
+    background-color: #9D9D9D;
+}
+.wrapItem .mid {
+    width: 80%;
+    background-color: #ffffff;
+    border-right: 1px solid #dbdbdb;
+    display: flex;
+    align-items: center;
+}
+.wrapItem .mid .time {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.88;
+    letter-spacing: normal;
+    text-align: center;
+    color: #252b2f;
+    
+}
+
+.wrapItem .left .dateTime {
+    font-size: 35px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fafafc;
+    
+    padding-top: 20px;
+}
+.wrapItem .left .dateTimeMobile {
+    display: none;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fafafc;
+    
+    padding-top: 20px;
+}
+.wrapItem .left .day {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 4.06;
+    letter-spacing: normal;
+    text-align: left;
+    color: #ffffff;
+    
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.wrapItem .left .dateTime span {
+    display: block;
+}
+.wrapItem .right .numBlocked {
+    font-size: 32px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f6353b;
+    
+    padding-top: 20px;
+}
+.wrapItem .right {
+    width: 10%;
+    position: relative;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #ffffff;
+}
+.wrapItem .right div:nth-child(2) {
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: #f6353b;
+    
+}
+.wrapItem .right .control {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: right;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+.control:hover {
+    opacity: 0.7;
+}
+.wrapItem .right .control span:first-child {
+    color: #076dff;
+    
+}
+.wrapItem.disabled {
+    opacity: 0.5;
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .wrapItem .right .control span:first-child {
+        margin-left: 200px;
+    }
+    .wrapItem {
+        display: block;
+    }
+    .wrapItem .left {
+        width: 100%;
+        min-height: unset;
+        border: none;
+        border-radius: unset;
+    }
+    .wrapItem .left .dateTime {
+        display: none;
+    }
+    .wrapItem .left .dateTimeMobile {
+        display: block;
+        padding: 10px;
+        text-align: start;
+    }
+    .wrapItem .left .day {
+        font-size: 20px;
+        line-height: normal;
+        right: 10px;
+        left: unset;
+        top: 55%;
+        transform: translateY(-50%);
+    }
+    .wrapItem .mid {
+        width: 100%;
+        display: block;
+        border: none;
+    }
+    .wrapItem .mid .time {
+        font-size: 20px;
+    }
+    .wrapItem .mid {
+        max-height: 500px;
+        overflow: auto;
+    }
+    .wrapItem .right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 20px;
+        border-radius: unset;
+    }
+    .wrapItem .right .numBlocked {
+        padding-top: 0;
+        padding-right: 15px;
+        padding-bottom: 20px;
+    }
+    .wrapItem .right .control {
+        // right: 10px;
+        left: unset;
+        // top: 50%;    
+        transform: translateY(-50%);
+    }
+}
+@media screen and (max-width: 375px) {
+}

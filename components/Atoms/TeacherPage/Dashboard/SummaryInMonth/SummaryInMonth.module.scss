@@ -1,0 +1,173 @@
+.WrapSummaryInMonth {
+    border-radius: 15px;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+.titlePage {
+    
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0356d2;
+    position: relative;
+    padding-left: 24px;
+    padding-top: 24px;
+    margin-bottom: 0;
+}
+.titlePage::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 5px;
+    height: 15px;
+    background-color: #066fd6;
+    border-bottom: 1px solid #dbdbdb;
+}
+.titleChart {
+    font-size: 17px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+    
+}
+.Chart {
+    position: relative;
+}
+@media (min-width: 670px) and (max-width: 767px) {
+    .Chart {
+        margin-left: 70px;
+    }
+}
+.summaryInMonth h5 {
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    margin-top: 50px;
+    color: #252b2f;
+    
+}
+.numberPHP {
+    
+    font-size: 57px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.79;
+    letter-spacing: normal;
+    text-align: left;
+    color: #25ab5c;
+    margin-top: 31px;
+    margin-bottom: 33px;
+}
+.summaryInMonth_info {
+    display: flex;
+}
+.summaryInMonth_info div {
+    width: 50%;
+}
+.summaryInMonth_info div div:nth-child(1) {
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+    
+    margin-bottom: 10px;
+}
+.summaryInMonth_info div div:nth-child(3) {
+    font-size: 33px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.82;
+    letter-spacing: normal;
+    text-align: left;
+    color: #5d5d5d;
+    
+    padding-top: 15px;
+}
+.summaryInMonth_info .line {
+    width: 14px;
+    height: 5px;
+    background-color: #066fd6;
+}
+.summaryInMonth_pbr {
+    margin-top: 40px;
+}
+.summaryInMonth_pbr div {
+    font-size: 17px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+    
+}
+.totalChart {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    left: 13%;
+    z-index: 1;
+}
+
+@media (min-width: 360px) and (max-width: 480px) {
+    .totalChart {
+        left: 5%;
+    }
+}
+.totalChart > p:first-child {
+    
+    line-height: 18px;
+    font-size: 50px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #252b2f;
+    margin: 0;
+}
+.totalChart > p:last-child {
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 2.27;
+    letter-spacing: normal;
+    text-align: center;
+    color: #252b2f;
+    margin: 0;
+    
+}
+.chart {
+    position: relative;
+}
+.facebook {
+    margin-bottom: 14px;
+}
+
+.circle-select {
+    width: 200px;
+}

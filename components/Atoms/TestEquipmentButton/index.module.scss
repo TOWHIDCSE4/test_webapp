@@ -1,0 +1,34 @@
+.equipmentBtn {
+    position: fixed;
+    bottom: 2rem;
+    border-radius: 999px;
+    box-shadow: 0 0 0 0 rgb(2 143 227);
+    animation: pulse-blue 2s infinite;
+    transform: scale(1);
+    z-index: 15;
+    width: fit-content;
+}
+
+@media screen and (min-width: 651px) {
+    .equipmentBtn {
+        left: 2rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .equipmentBtn {
+        right: 1rem;
+    }
+}
+
+@keyframes pulse-blue {
+    0% {
+        box-shadow: 0 0 0 0 rgb(2 143 227 / 70%);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgb(2 143 227 / 0%);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgb(2 143 227 / 0%);
+    }
+}

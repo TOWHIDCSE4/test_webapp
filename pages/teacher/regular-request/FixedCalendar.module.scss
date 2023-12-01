@@ -1,0 +1,51 @@
+.bookflow-container {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    height: 100%;
+}
+.booking-calendar-container {
+    height: 100%;
+}
+.booking-calendar-body {
+    // height: calc(100% - 126px);
+    // height: 525px;
+    // overflow-y: auto;
+}
+.calendar-head-date {
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 20px;
+    padding: 12px 0;
+    height: 46px;
+    -webkit-align-items: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.calendar-head-date-container {
+    display: -webkit-flex;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 960px;
+}
+.booking-calendar-navigation {
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    margin: 0 30px;
+    padding: 20px 0;
+    height: 80px;
+    -webkit-align-items: center;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.booking-calendar-date {
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+}
+.calendar-head-cell, .calendar-head-cell-blank {
+    -webkit-flex: 1 1;
+    flex: 1 1;
+    margin-left: 15px;
+}

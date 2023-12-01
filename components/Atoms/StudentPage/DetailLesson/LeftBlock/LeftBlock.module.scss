@@ -1,0 +1,44 @@
+.calendar {
+    color: #fff;
+    flex: 1;
+}
+
+.bookingId {
+    background: #fff;
+    padding: 0 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 2;
+    span {
+        color: gray;
+    }
+}
+
+.time {
+    font-size: 50px;
+    font-weight: 300;
+    color: #fff;
+    margin-top: 20px;
+}
+
+.teacherInfo {
+    p {
+        margin: 0;
+    }
+    p:last-child {
+        font-size: 10px;
+        color: #777;
+    }
+}
+
+.rating {
+    float: right;
+}
+
+.info {
+    strong {
+        color: #076fd6;
+        font-size: 15px;
+    }
+}

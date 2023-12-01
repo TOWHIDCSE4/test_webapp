@@ -1,0 +1,52 @@
+.badge {
+    position: absolute;
+    top: calc(100% - 60px);
+    left: 0;
+    width: 100%;
+    padding: 10px 16px;
+    color: #fff;
+    font-size: 1.4em;
+    line-height: 1.6em;
+    margin: 0;
+    z-index: 10;
+    transition: all 0.3s;
+    background-color: #007eda;
+    strong {
+        display: block;
+        font-weight: 500;
+        font-size: 1rem;
+        i {
+            margin-right: 0.25rem;
+        }
+    }
+}
+
+.badge:before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: -16px;
+    width: 0;
+    border: 8px solid;
+    transition: all 0.3s;
+    border-top-color: transparent;
+    border-right-color: #003d99;
+    border-bottom-color: #003d99;
+    border-left-color: transparent;
+}
+
+.badge:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: -16px;
+    width: 0;
+    border: 8px solid;
+    transition: all 0.3s;
+    top: auto;
+    bottom: 0;
+    border-top-color: #007eda;
+    border-right-color: #007eda;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}

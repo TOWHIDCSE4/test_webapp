@@ -1,0 +1,41 @@
+.header {
+    color: #444;
+    padding: 20px 0 10px 0;
+    position: relative;
+    box-shadow: none;
+    h2 {
+        font-size: 15px;
+        color: #777;
+        text-transform: none;
+        position: relative;
+        margin-bottom: 0;
+        strong {
+            color: #076fd6;
+        }
+    }
+}
+.card {
+    border-radius: 0.35rem;
+}
+
+.notice-body {
+    color: #222;
+    max-height: 320px;
+    overflow-y: auto;
+    width: 100%;
+    span {
+        float: right;
+        color: #adb5bd;
+        font-size: 10px;
+    }
+}
+
+.diver {
+    margin: 1rem 0;
+}
+
+.card-disable {
+    background: #bfbfbf;
+    border-radius: .35rem;
+    opacity: 0.5;
+}

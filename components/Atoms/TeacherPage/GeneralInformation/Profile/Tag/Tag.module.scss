@@ -1,0 +1,27 @@
+.tag {
+    padding: 4px 16px;
+    border-radius: 32px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.inactive {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #252b2f;
+    
+    background-color: #DBDBDB;
+}
+.active {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    text-align: center;
+    
+    color: #fff;
+    background-color: #FA9B1A;
+}

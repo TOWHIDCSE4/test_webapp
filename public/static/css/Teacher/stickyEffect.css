@@ -1,0 +1,111 @@
+.stickyHeader {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    top: 0;
+    transition: all 0.5;
+}
+.stickyMenu {
+    position: fixed;
+    top: 60px;
+    width: 235px;
+    left: 210px;
+    height: auto;
+    transition: all 0.5;
+}
+@media (max-width: 767px){
+    .stickyMenu{
+        display: none;
+    }
+}
+.stickyMenuMobile {
+    display: block;
+}
+.MenuLeft {
+    display: none;
+}
+.nav-teaching-history{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    margin: 0 !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+    transition: all ease 0.3s;
+}
+.filter{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 40px;
+    left: 0;
+    z-index: 10;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all ease 0.3s;
+    margin: 0 !important;
+    padding-top: 20px;
+    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 12%), inset 0 -1px 0 0 #dadce0;
+}
+@media screen and (min-width: 785px) and (max-width: 1445px) {
+    .stickyMenu {
+        left: unset;
+        width: 200px;
+    }
+}
+@media screen and (min-width: 1445px) {
+    .stickyMenu {
+        left: unset;
+        right: calc(100%-210px);
+        /* width: 200px; */
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .stickyMenu {
+        display: none;
+    }
+    .stickyMenuMobile {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        transition: left ease 0.5s;
+        background-color: #fff;
+        max-height: 100%;
+        overflow-y: auto;
+        width: 100%;
+        padding: 15px;
+    }
+    .overlay {
+        background-color: black;
+        opacity: 0.5;
+        position: fixed;
+        height: 100%;
+        width: 35%;
+        right: 0px;
+        top: 53px;
+        z-index: 10;
+        overflow: hidden;
+        transition: right ease 0.5s;
+    }
+    .stickyHeader {
+        display: block;
+    }
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-height: 786px) {
+    .stickyMenu {
+        position: initial;
+    }
+}

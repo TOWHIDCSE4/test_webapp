@@ -1,0 +1,74 @@
+.wrapPaymentMethod {
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    max-width: 700px;
+    margin: 20px auto;
+}
+.title {
+    position: relative;
+    padding-left: 24px;
+    padding-top: 24px;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0356d2;
+}
+.title::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    width: 5px;
+    height: 15px;
+    background-color: #066fd6;
+    border-bottom: 1px solid #dbdbdb;
+}
+.formInfoBank {
+    font-size: 18px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.78;
+    letter-spacing: normal;
+    text-align: left;
+    color: #252b2f;
+    padding: 25px 20px;
+}
+.formInfoBank .btnFrom {
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fafafc;
+
+    height: auto;
+    padding: 13px 37px 10px 38px;
+}
+.notiFrom {
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: normal;
+    text-align: left;
+    color: #f6353b;
+    padding: 15px;
+    background-color: #fafafc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+@media screen and (min-width: 375px) and (max-width: 425px) {
+    .formInfoBank .btnFrom {
+        padding: 6.4px 40px;
+    }
+}

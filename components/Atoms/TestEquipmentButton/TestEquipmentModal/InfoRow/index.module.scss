@@ -1,0 +1,22 @@
+
+.info-row{
+  display: flex;
+  margin-bottom: 16px;
+
+  .icon{
+    width: 35px;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  .body-content{
+    flex: 1;
+    .title{
+      label{
+        margin-bottom: 2px;
+      }
+    }
+  }
+}

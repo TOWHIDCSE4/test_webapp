@@ -1,0 +1,23 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+*-lock.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+node_modules
+.next
+.idea
+
+out/
+package-lock.json
+yarn.lock
+.env
+
+.env*.local
+
+build/Release

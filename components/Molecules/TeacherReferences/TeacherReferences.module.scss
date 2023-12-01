@@ -1,0 +1,29 @@
+.wrapper {
+    background-color: white;
+    padding: 20px;
+    height: calc(100vh - 60px);
+    font-size: 14px;
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    a > span {
+        color: #800000;
+    }
+}
+
+.title {
+    color: #7777;
+    border-bottom: 1px solid #7777;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+}
+
+.red-text {
+    color: #800000;
+}
+
+.gray-text {
+    color: #7777;
+}
